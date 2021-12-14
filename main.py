@@ -68,11 +68,11 @@ if len(not_in_drive) > 0:
 ## Download everything that isn't already in the directory
 ## Or just print the summary
 if execute_download: 
-    print("Downloading Songs:")
-    for song_name in not_downloaded:
-        song_id = files_in_drive[song_name]
-        dr.DownloadFile(song_id, target_dir + "/" + song_name)
-        print("-- " + song_name)
+    print("Downloading Files:")
+    for file_name in not_downloaded:
+        file_id = files_in_drive[file_name]
+        dr.DownloadFile(file_id, target_dir + "/" + file_name)
+        print("-- " + file_name)
     print("Finished downloading file(s)!")
 else: 
     print("Finished producing summary!")
